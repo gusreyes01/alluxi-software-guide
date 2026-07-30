@@ -1,0 +1,22 @@
+{
+  "name": "alluxi-software-guide",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:html": "html-validate index.html",
+    "lint:css": "stylelint styles.css",
+    "test": "node --test",
+    "check": "npm run lint:html && npm run lint:css && npm run format:check && npm test"
+  },
+  "devDependencies": {
+    "html-validate": "11.6.0",
+    "prettier": "3.9.6",
+    "stylelint": "17.14.1",
+    "stylelint-config-standard": "40.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
